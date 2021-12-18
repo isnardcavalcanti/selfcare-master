@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+  --green: #5ca720;
+  --black: #161616;
+  --gray-dividing-lines: #a5a1a1;
+  --gray: #f9f9f9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 411px;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 82px;
+}
+ul {
+  display: flex;
+  gap: 1rem;
+}
+.icons {
+  width: 20px;
+  height: 19px;
+}
+.image-banner {
+  max-height: 160px;
+}
+.banner {
+  width: 100%;
+  object-fit: cover;
+  height: 160px;
+}
+.sale {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  border-bottom: 0.2px solid var(--gray-dividing-lines);
+}
+.sale h3 {
+  font-size: 1rem;
+}
+.sale p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.product {
+  margin: 1rem;
+}
+.product img {
+  width: 105px;
+  object-fit: cover;
+  height: 120px;
+}
+.product p {
+  font-weight: bold;
+}
+.product p span {
+  color: var(--green);
+}
+footer {
+  padding: 1.2rem;
+  background-color: var(--gray);
+  display: grid;
+  gap: 1.5rem 0;
+  border-top: 0.2px solid var(--gray-dividing-lines);
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+footer ul li a {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
