@@ -22,9 +22,9 @@ nav {
   padding: 0 1.5rem;
   height: 82px;
 }
-ul {
+.list-footer {
   display: flex;
-  gap: 1rem;
+  gap: 0.2rem;
 }
 .icons {
   width: 20px;
@@ -71,10 +71,8 @@ ul {
   color: var(--green);
 }
 footer {
-  padding: 1.2rem;
   background-color: var(--gray);
   display: grid;
-  gap: 1.5rem 0;
   border-top: 0.2px solid var(--gray-dividing-lines);
 }
 
@@ -88,4 +86,43 @@ footer ul li a {
   font-weight: 600;
   font-size: 0.7rem;
   text-decoration: none;
+}
+.list-footer,
+.news,
+.icons-footer {
+  padding: 1.2rem;
+}
+.news {
+  border-bottom: 0.2px solid #a5a1a1;
+}
+.input-email {
+  margin-top: 0.5rem;
+  min-width: 241.6px;
+  min-height: 43px;
+  border: 0.395833px solid #d9d9d9;
+  padding-left: 0.5rem;
+}
+
+.btn {
+  margin: 0.8rem 0 0.5rem 0;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--green);
+}
+.icons-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.social-networks {
+  display: flex;
+  gap: 0.6rem;
+}
+.card-flag {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.4rem;
 }
