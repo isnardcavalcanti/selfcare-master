@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 411px;
+  max-width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -22,6 +22,10 @@ nav {
   padding: 0 1.5rem;
   height: 82px;
 }
+nav .icons-header {
+  display: flex;
+  gap: 0.7rem;
+}
 .list-footer {
   display: flex;
   gap: 0.2rem;
@@ -29,9 +33,6 @@ nav {
 .icons {
   width: 20px;
   height: 19px;
-}
-.image-banner {
-  max-height: 160px;
 }
 .banner {
   width: 100%;
@@ -54,11 +55,12 @@ nav {
 }
 .items {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
 }
-.product {
+/* .product {
   margin: 1rem;
-}
+} */
 .product img {
   width: 105px;
   object-fit: cover;
@@ -97,7 +99,7 @@ footer ul li a {
 }
 .input-email {
   margin-top: 0.5rem;
-  min-width: 241.6px;
+  min-width: 100%;
   min-height: 43px;
   border: 0.395833px solid #d9d9d9;
   padding-left: 0.5rem;
@@ -123,6 +125,47 @@ footer ul li a {
 }
 .card-flag {
   display: flex;
-  /* align-items: center; */
   gap: 0.4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .img-logo {
+    width: 7.5rem;
+  }
+  .icons1 {
+    width: 24px;
+    height: 23px;
+  }
+  .icons {
+    width: 25px;
+    height: 24px;
+  }
+  .banner {
+    height: calc(100vh - 82px);
+    object-fit: cover;
+  }
+  .sale {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .sale h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .sale p {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .items {
+    align-self: center;
+  }
+  .product img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+  }
+} ;
