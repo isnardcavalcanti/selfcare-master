@@ -24,7 +24,7 @@ nav {
 }
 nav .icons-header {
   display: flex;
-  gap: 0.7rem;
+  gap: 1rem;
 }
 .list-footer {
   display: flex;
@@ -37,7 +37,8 @@ nav .icons-header {
 .banner {
   width: 100%;
   object-fit: cover;
-  height: 160px;
+  min-width: 16rem;
+  min-height: 10rem;
 }
 .sale {
   display: flex;
@@ -57,17 +58,19 @@ nav .icons-header {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem 0;
+  margin: 1.75rem 0 5rem 0;
 }
-/* .product {
-  margin: 1rem;
-} */
 .product img {
-  width: 105px;
+  width: 126px;
   object-fit: cover;
   height: 120px;
 }
 .product p {
   font-weight: bold;
+}
+.title-product {
+  font-size: 12px;
 }
 .product p span {
   color: var(--green);
@@ -129,6 +132,9 @@ footer ul li a {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    padding: 0 2.5rem;
+  }
   .img-logo {
     width: 7.5rem;
   }
@@ -141,12 +147,13 @@ footer ul li a {
     height: 24px;
   }
   .banner {
-    height: calc(100vh - 82px);
-    object-fit: cover;
+    /* min-width: 48rem; */
+    height: 23.4375rem;
+    /* object-fit: cover; */
   }
   .sale {
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2.5rem;
   }
   .sale h3 {
     font-size: 20px;
@@ -168,4 +175,9 @@ footer ul li a {
     height: 190px;
     object-fit: cover;
   }
+  /*   .list-footer,
+  .news,
+  .icons-footer {
+    padding: 1.2rem 2.5rem;
+  } */
 } ;
